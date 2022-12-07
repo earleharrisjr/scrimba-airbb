@@ -7,6 +7,7 @@ import cardData from './cardData'
 function App() {
   const cardElements = cardData.map(card => {
     return <Card
+      key={card.id}
       image={card.coverImg}
       rating={card.stats.rating}
       reviewCount={card.stats.reviewCount}
